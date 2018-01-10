@@ -1,0 +1,2 @@
+URL to generate links.json:
+https://census.daybreakgames.com/get/ps2:v2/zone?c:limit=8&c:join=facility_link^list:1^inject_at:links(map_region^on:facility_id_a^to:facility_id^inject_at:facility_a,map_region^on:facility_id_b^to:facility_id^inject_at:facility_b)
