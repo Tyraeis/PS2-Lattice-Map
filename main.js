@@ -6,6 +6,6 @@ requirejs.config({
     }
 });
 
-DAYBREAK_SERVICE_ID = "s:example";
+DAYBREAK_SERVICE_ID = "s:ps2LatticeMap";
 
 requirejs(["src/main"]);
