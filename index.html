@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <style>
+            html {
+                background-color: #000;
+            }
+
+            canvas {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                background-color: #000;
+            }
+
+            #selector {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                font-family: "Ubuntu", sans-serif;
+                color: white;
+            }
+
+            #world-selector, #continent-selector {
+                margin: 10px;
+            }
+
+            #world-selector {
+                margin-bottom: 20px;
+            }
+
+            #world-selector div, #continent-selector div {
+                padding: 5px;
+            }
+
+            .header {
+                color: #ffff00;
+            }
+
+            .selector-option {
+                cursor: pointer;
+            }
+
+            .selector-option:hover {
+                background-color: #111;
+            }
+
+            .selected {
+                background-color: #222;
+            }
+
+            .selected:hover {
+                background-color: #333;
+            }
+
+            
+        </style>
+        <script data-main="main" src="lib/require.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div id="selector">
+            <div id="world-selector">
+                <div class="header">Server</div>
+                <div class="selector-option" data-id="1">Connery</div>
+                <div class="selector-option selected" data-id="17">Emerald</div>
+                <div class="selector-option" data-id="10">Miller</div>
+                <div class="selector-option" data-id="13">Cobalt</div>
+                <div class="selector-option" data-id="25">Briggs</div>
+            </div>
+            <div id="continent-selector">
+                <div class="header">Continent</div>
+                <div class="selector-option selected" data-id="2">Indar</div>
+                <div class="selector-option" data-id="4">Hossin</div>
+                <div class="selector-option" data-id="6">Amerish</div>
+                <div class="selector-option" data-id="8">Esamir</div>
+            </div>
+        </div>
+    </body>
+</html>
