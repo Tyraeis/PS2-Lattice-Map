@@ -39,7 +39,7 @@ define(["jquery", "./link-data"], function($, link_data) {
 
     Control.load = function(continent) {
         $.get({
-            url: "http://census.daybreakgames.com/" + DAYBREAK_SERVICE_ID + "/get/ps2:v2/map?zone_ids=" + continent + "&world_id=" + world,
+            url: "https://census.daybreakgames.com/" + DAYBREAK_SERVICE_ID + "/get/ps2:v2/map?zone_ids=" + continent + "&world_id=" + world,
             dataType: "json",
             success: (data) => {
                 console.log(data);
